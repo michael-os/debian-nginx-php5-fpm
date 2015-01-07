@@ -8,7 +8,6 @@ RUN rm /etc/nginx/sites-enabled/*
 COPY nginx.conf.d/00-php5-fpm.conf /etc/nginx/conf.d/00-php5-fpm.conf
 COPY nginx.sites-enabled/10-virtualhost.conf /etc/nginx/sites-enabled/10-virtualhost.conf
 COPY supervisor.conf.d /etc/supervisor/conf.d
-COPY index.php /var/www/index.php
 
 EXPOSE 80 443
 
